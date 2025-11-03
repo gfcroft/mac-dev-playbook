@@ -161,6 +161,7 @@ composer_packages: []
 gem_packages: []
 
 #TODO get all the lsp servers using lsp-lazy instead in nvim
+# pnpm?
 npm_packages:
   - name: webpack
     # state: latest
@@ -173,7 +174,7 @@ npm_packages:
   - name: yaml-language-server
   - name: vscode-langservers-extracted
 
-# TODO need to implement pipx to get around new PEP 668 constraint that breaks this
+# TODO need to implement uv to get around new PEP 668 constraint that breaks this
 # for now, pipx them
 # pip_packages:
 #   - name: pynvim
