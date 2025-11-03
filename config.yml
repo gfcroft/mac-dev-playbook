@@ -34,6 +34,7 @@ homebrew_taps:
 #  don't forget to echo "$(brew --prefix)/bin/bash" | sudo tee -a /etc/shells ; then chsh -s "$(brew --prefix)/bin/bash"
 
 homebrew_installed_packages:
+  - asdf # this installs kubectl, helm, etc
   - act
   - autoconf
   - bash
@@ -85,7 +86,6 @@ homebrew_installed_packages:
   - yarn
   - yarn-completion
   - vault
-  - helm
   - yamllint
   - jq
   - k9s
@@ -115,6 +115,7 @@ homebrew_installed_packages:
   - xz
   - pyenv
   - mise
+  - gopls
 
 homebrew_cask_apps:
   - bitwarden
@@ -186,7 +187,9 @@ npm_packages:
 #   - name: speedtest-cli
 #     state: present
 
-configure_dock: false
+# TODO other things like sdkman....
+
+configure_dock: true
 dockitems_remove:
   - "Contacts"
   - "Safari"
